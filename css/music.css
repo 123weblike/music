@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:rgb(55,76,86);
+}
+.photo{
+    width: 320px;
+    height: 600px;
+    margin: 100px auto;
+    background:#000;
+    font-family: "微软雅黑";
+    padding: 5px;
+    background-color: #222;
+    border-radius: 20px;
+    box-shadow: 0 0 7px #fff;
+    overflow:hidden;
+    text-align: center;
+}
+.top{
+    width: 320px;
+    height: 23px;
+    background: url('../images/1.png') no-repeat;
+}
+.photo .title{
+    width: 320px;
+    height: 30px;
+    background: url('../images/2.png') no-repeat;
+    font-size: 20px;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+}
+.photo .play{
+    width: 190px;
+    height: 190px;
+    background: url('../images/3.png') no-repeat;
+    font-size: 14px;
+    color: #ccc;
+    margin: 0 auto;
+    line-height: 40px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+.singer{
+    color: white;
+    text-align: center;
+}
+.lrc{
+    width: 300px;
+    height: 285px;
+    margin: 20px auto;
+    text-align: center;
+    overflow: hidden;
+    color: #ccc;
+}
+.lrc p{
+    line-height: 20px;
+    font-size: 12px;
+}
+.content{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.play.rotate{ /*调用动画：动画名 执行完成动画时间 匀速执行 无限循环*/
+    -webkit-animation:rot 5s linear infinite;
+    -moz-animation: rot 5s linear infinite;
+    -ms-animation:rot 5s linear infinite ;
+    animation:rot 5s linear infinite ;
+    -o-animation: rot 5s linear infinite;
+}
+@keyframes rot {/* 定义一个名字叫做rot的动画*/
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}
